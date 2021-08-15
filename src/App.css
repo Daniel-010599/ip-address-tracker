@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+body{
+  padding:0;
+  margin:0;
+  font-family: 'Rubik', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-domain{
+  background-image:url(images/pattern-bg.png);
+  background-size:cover;
+  padding:30px 0 95px 0;
+  position:relative;
+}
+.search-domain h1{
+  margin-bottom:22px;
+  color:#ffffff;
+}
+.search-domain h1,form{
+  text-align:center;
+}
+.search-domain form{
+  display:flex;
+  justify-content:center;
+}
+.search-domain .form{
+  margin:0 30px;
+  display:flex;
+  width:503px;
+}
+.search-domain .form input{
+  padding:15px 20px;
+  outline:none;
+  border:none;
+  font-size:20px;
+  max-width:420px;
+  width:100%;
+  border-radius:12px 0 0 12px;
+}
+.search-domain button{
+  background-color:#000000;
+  outline:none;
+  padding:15px 16px;
+  border:none;
+  font-size:20px;
+  cursor:pointer;
+  border-radius:0 12px 12px 0;
+}
+.search-domain .error{
+  color:#932727;
+  text-align:center;
+  margin-top:10px;
+  font-weight:bold;
+  visibility:hidden;
+}
+.search-domain .error-visibility{
+  visibility:visible;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.container-information{
+  display:flex;
+  justify-content:center;
+}
+.information{
+  display:flex;
+  border-radius:10px;
+  background-color:#ffffff;
+  margin:0 30px;
+}
+@media (max-width:840px){
+  .margin .information h4{
+    font-size:23px;
+  }
+  .information .information-item{
+    padding:35px 23px;
+  }  
+}
+@media (max-width:690px){
+  .information label{
+    display:none;
+  }
+  .information{
+    flex-direction:column;
+    height:auto;
+    padding:10px 0;
+  }
+  .margin .information h4{
+    font-size:23px;
+  }
+  .search-domain .container-information .margin{
+    bottom:-240px;
+  }
+  .information .information-item{
+    padding:10px 28px;
+    width:auto;
+    text-align:center;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container-information .margin{
+  position:absolute;
+  max-width:1200px;
+  width:100%;
+  top:200px;
+  z-index:10;
+}
+.information-item{
+  padding:35px 28px;
+  width:25%;
+}
+.information .col{
+  display:flex;
+  align-items:center;
+}
+.information label{
+  width:1px;
+  height:80px;
+  background-color:#e4e4e4;
+}
+.information p{
+  color:hsl(0, 0%, 59%);
+  font-weight:bold;
+  font-size:13px;
+  margin-bottom:10px;
+  letter-spacing:2px;
+}
+.information h4{
+  font-size:26px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leaflet{
+  z-index: 1;
+  height:100vh;
+  width:100wh;
+}
+.leaflet-top{
+  display:none;
 }
