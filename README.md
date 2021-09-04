@@ -1,6 +1,6 @@
 Challenge Frontend Mentor - IP Address Tracker
 
-Developed with React Js and Ipify API
+Developed with React Js, Flexbox and Ipify API
 
 Deploy https://d-ip-address-tracker.netlify.app/
 
